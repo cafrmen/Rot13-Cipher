@@ -29,6 +29,7 @@
   color: #49FF00;
   background-color: #141E27;
   border: 1px solid #49FF00;
+  width: 93%;
   font-family: atari;
   margin-bottom: 12px;
 }
@@ -40,7 +41,7 @@
 .magic {
   display: block;
   margin: 0 auto;
-  width: 168px;
+  width: 93%;
   padding: 7px;
   border-radius: 12px;
   color: #141E27;
