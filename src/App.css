@@ -1,38 +1,68 @@
 .App {
+  width: 100%;
+  height: 100vh; /* altura del navegador */
+  padding-top: 10px;
+  display: flex;  /* flex para que esté centrado con justify y align */
+  flex-wrap: wrap;
+  justify-content: center; /* horizontal */
+  align-items: center;  /* vertical */
+  font-family: atari;
+  user-select: none;
+  background-color: #141E27;
+}
+
+.contenedor-rot {
+  width: 380px;
+  height: auto;
+  margin: 12px;
+  padding: 3px 12px;
+  border: 1px solid #49FF00;
+  border-radius: 12px;
   text-align: center;
+  background-color: #141E27;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .cipher => input  && .magic => button */
+.cipher {
+  padding: 7px;
+  border-radius: 12px;
+  color: #49FF00;
+  background-color: #141E27;
+  border: 1px solid #49FF00;
+  font-family: atari;
+  margin-bottom: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cipher::placeholder {
+  color: #49FF00;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.magic {
+  display: block;
+  margin: 0 auto;
+  width: 168px;
+  padding: 7px;
+  border-radius: 12px;
+  color: #141E27;
+  background-color: #49FF00;
+  border: 1px solid #49FF00;
+  font-family: atari;
+  transition: ease-in-out 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.magic:hover {
+    color: #49FF00;
+    background-color: #141E27;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+hr {
+  margin: 12px;
+  height: 0.3px;
+  background-color: #49FF00;
+  border: none;
+}
+
+.result {
+  padding: 12px;
+  font-weight: bold;
 }
