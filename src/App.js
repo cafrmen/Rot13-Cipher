@@ -30,33 +30,42 @@ function App() {
     return (
         <div className='App' >
           <div className='contenedor-rot' >
-            <h1>Rot-13</h1>
-            <h3>
-              An encryption algorithm used in the early 1980s.
-            </h3>
-            <p>
-              Originated on Usenet, provides no real cryptographic security. It is often used as the canonical example of weak encryption. The algorithm is used in online forums as a means to hide information.
-            </p>
-
-            <form onSubmit={handleSubmit}>
-              <input className='cipher'
-                    type='text'
-                    name='cipher'
-                    placeholder='...'
-                    value={input}
-                    onChange={handleChange} />
-              <button type="submit" className='magic' >
-                Magic
-              </button>
-            </form>
-            <hr />
-            <div>
+            <header>
+              <h1>Rot-13</h1>
+            </header>
+            <main>
+              <section>
+                <h3>
+                  An encryption algorithm used in the early 1980s.
+                </h3>
+                <p>
+                  Originated on Usenet, provides no real cryptographic security.
+                  It is often used as the canonical example of weak encryption.
+                  The algorithm is used in online forums as a means to hide information.
+                </p>
+              </section>
+              <section>
+                <form onSubmit={handleSubmit}>
+                  <input className='cipher'
+                        type='text'
+                        name='cipher'
+                        placeholder='...'
+                        value={input}
+                        onChange={handleChange} />
+                  <button type="submit" className='magic' >
+                    Magic
+                  </button>
+                </form>
+                <hr />
+              </section>
+            </main>
+            <footer>
               <p className='result'>
                 {result}
               </p>
-            </div>
+            </footer>
           </div>
-        </div>
+      </div>
     )
 }
 
