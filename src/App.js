@@ -2,24 +2,24 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-        const [input, setInput] = useState('');
-        const [result, setResult] = useState('ZL CEBWRPG SEBZ SERRPBQRPNZC WF NYTBEVGUZF NAQ QNGN FGEHPGHERF');
+    const [input, setInput] = useState('');
+    const [result, setResult] = useState('ZL CEBWRPG SEBZ SERRPBQRPNZC WF NYTBEVGUZF NAQ QNGN FGEHPGHERF');
 
-        const handleChange = (e) => setInput(e.target.value);
+    const handleChange = (e) => setInput(e.target.value);
 
-        /* This is the JS magic for the Rot13 Cipher */
-        const handleSubmit = (e) => {
-            e.preventDefault();
+    /* This is the JS magic for the Rot13 Cipher */
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-            var numStr = input.toUpperCase()
-                              .split('')
-                              .map(letter => letter.charCodeAt(0));
+        var numStr = input.toUpperCase()
+                          .split('')
+                          .map(letter => letter.charCodeAt(0));
 
-            var letterStr = numStr.map(num => (num >= 65 && num <= 77) ?
-                                      num + 13 :
-                                      (num >= 78 && num <= 90) ?
-                                      num - 13 :
-                                      num);
+        var letterStr = numStr.map(num => (num >= 65 && num <= 77) ?
+                                  num + 13 :
+                                  (num >= 78 && num <= 90) ?
+                                  num - 13 :
+                                  num);
 
         var finalStr = letterStr.map(index => String.fromCharCode(index))
                                    .join('');
