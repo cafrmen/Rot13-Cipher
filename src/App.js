@@ -7,7 +7,8 @@ function App() {
 
     const handleChange = (e) => setInput(e.target.value);
 
-    /* This is the JS magic for the Rot13 Cipher */
+    /* This is the JS magic for the Rot13 Cipher
+    freeCodeCamp JS Algorithms and Data Structure certification project */
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -16,13 +17,13 @@ function App() {
                           .map(letter => letter.charCodeAt(0));
 
         var letterStr = numStr.map(num => (num >= 65 && num <= 77) ?
-                                  num + 13 :
-                                  (num >= 78 && num <= 90) ?
-                                  num - 13 :
-                                  num);
+                                num + 13 :
+                                (num >= 78 && num <= 90) ?
+                                    num - 13 :
+                                    num);
 
         var finalStr = letterStr.map(index => String.fromCharCode(index))
-                                   .join('');
+                                .join('');
 
         setResult(finalStr);
     }
