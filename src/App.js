@@ -110,16 +110,16 @@ function App() {
                     round++;
                     alert(`Round: ${round}. Draw, you choose ${lowerPlayerSelection} and CPU choose ${computerSelection}.
                                 Score: You ${playerWins}, CPU ${cpuWins}`);
-                } else if (lowerPlayerSelection === 'rock' && computerSelection === 'paper' ||
-                            lowerPlayerSelection === 'paper' && computerSelection === 'scissors' ||
-                            lowerPlayerSelection === 'scissors' && computerSelection === 'rock') {
+                } else if ((lowerPlayerSelection === 'rock' && computerSelection === 'paper') ||
+                            (lowerPlayerSelection === 'paper' && computerSelection === 'scissors') ||
+                            (lowerPlayerSelection === 'scissors' && computerSelection === 'rock')) {
                     round++;
                     cpuWins++;
                     alert(`Round: ${round}. You lose! ${computerSelection} beats ${lowerPlayerSelection}.
                                 Score: You ${playerWins}, CPU ${cpuWins}`);
-                } else if (lowerPlayerSelection === 'rock' && computerSelection === 'scissors' ||
-                            lowerPlayerSelection === 'paper' && computerSelection === 'rock' ||
-                            lowerPlayerSelection === 'scissors' && computerSelection === 'paper') {
+                } else if ((lowerPlayerSelection === 'rock' && computerSelection === 'scissors') ||
+                            (lowerPlayerSelection === 'paper' && computerSelection === 'rock') ||
+                            (lowerPlayerSelection === 'scissors' && computerSelection === 'paper')) {
                     round++;
                     playerWins++;
                     alert(`Round: ${round}. You won! ${lowerPlayerSelection} beats ${computerSelection}.
@@ -141,7 +141,7 @@ function App() {
                             Final Score: You ${playerWins}, CPU ${cpuWins}.
                             This game was created with narration by FabianCM, coded with React by CarmenFR and stolen by the AI Interstellar Congress. Now enjoy ROT-13!`);
                 } else {
-                    alert(`It\'s a draw! ${randomDrawFrases[Math.floor(Math.random() * 5)]} :| ...
+                    alert(`It's a draw! ${randomDrawFrases[Math.floor(Math.random() * 5)]} :| ...
                             Final Score: You ${playerWins}, CPU ${cpuWins}. Try again?.
                             This game was created with narration by FabianCM, coded with React by CarmenFR and stolen by the AI Interstellar Congress. Now enjoy ROT-13!`);
                 }
