@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/cafrmen/Rot13-Cipher/static/css/main.d92ee626.css",
+    "main.js": "/cafrmen/Rot13-Cipher/static/js/main.2bd3e431.js",
+    "static/js/787.b1aafdf0.chunk.js": "/cafrmen/Rot13-Cipher/static/js/787.b1aafdf0.chunk.js",
+    "static/media/atari.ttf": "/cafrmen/Rot13-Cipher/static/media/atari.0c7b463b971012c49372.ttf",
+    "index.html": "/cafrmen/Rot13-Cipher/index.html",
+    "main.d92ee626.css.map": "/cafrmen/Rot13-Cipher/static/css/main.d92ee626.css.map",
+    "main.2bd3e431.js.map": "/cafrmen/Rot13-Cipher/static/js/main.2bd3e431.js.map",
+    "787.b1aafdf0.chunk.js.map": "/cafrmen/Rot13-Cipher/static/js/787.b1aafdf0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d92ee626.css",
+    "static/js/main.2bd3e431.js"
+  ]
+}
