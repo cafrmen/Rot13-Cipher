@@ -28,9 +28,9 @@ function App() {
 
         setResult(finalStr);
     }
-    /* End of ROT-13 */
+    // End of ROT-13
 
-    // set the timeout for the game
+    // set the TIMEOUT for the mini game
     useEffect(() => {
         const timeout = setTimeout(() => {
                 /* This is the surprise game */
@@ -45,10 +45,10 @@ function App() {
                                     The AI Interestellar Congress is too civilizated and we decided to bring you a chance of not being exterminated, so you are the selected human representing the hope of humanity by a round of 5 'scissors, paper and rock' game. Why that game?...
                                     Come on, in another type of logical game you would be easily defeated. It's a fair chance for you.
                                     You can't escape from this game. The only way is to loose, win or draw but I'm sure that since you decided to open this game, you already DECIDED TO LOOSE ... it's just that you are not aware about this whahahahahaha!
-                                    Just in case, because you were selected randomly, and I don't know if you have experience typing on a computer, I decide to bring you one facility to bring you a chance.
+                                    Just in case, because you were selected randomly, and I don't know if you have experience typing on a device, I decide to bring you one facility to bring you a chance.
                                     You can write your answer in capital or lower case letters, with spaces, before or after the word and even between letters.`;
 
-            // everyone write random frases for all scenarios
+            // frases for all scenarios
             const randomCheatingFrases = [
                 'Too good to be bad!',
                 'Come on, you are making this way too easy for me.',
