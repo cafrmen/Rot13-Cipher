@@ -33,7 +33,6 @@ function App() {
     // set the TIMEOUT for the mini game
     useEffect(() => {
         const timeout = setTimeout(() => {
-                /* This is the surprise game */
             let playerWins = 0;
             let cpuWins = 0;
             let loopVar = 5;
